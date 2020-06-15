@@ -16,18 +16,32 @@ A gyakorlati feladatoknál, amennyiben a project nem indul el, nem tudok rá pon
 ### Kérdések (30 pont)
 
 1) Mi az az SPA (Single Page Application)? **(2p)**
+-- Az SPA egy egy oldalból álló alkalmazás, aminek a tartalma dinamikusan változik, az oldal újratöltése nélkül.
 2) Miket nevezünk dekorátoroknak? Mondj rájuk legalább 3 példát. **(4p)**
+-- Speciális osztályokat jelölnek a dekorátorok. @Component, @Injectable, @NgModule
 3) Nevezz meg két-két struktúrális és attribútum direktívát! Mire használjuk őket? **(4p)**
+-- Strukrúrális: ngIf, ngFor - ngIf: akkor jelenjen meg a html tag, ha az If feltétel teljesül; ngFor: pl. listába (ul/ol) kipörgetjük az elemeket.  
+-- Attribútum: ngStyle, ngClass - mindkettővel html tag-ek tartalmát tudjuk formázni (pl. háttérszín, betűszín, font stílus), csak eltérő módon.
 4) Milyen típusú adatok jeleníthetőek meg string interpoláció segítségével? Milyenek nem? **(2p)**
+-- String és number jeleníthető meg, boolean típusú viszont nem.
 5) Nevezz meg legalább 3 életciklust! Mire használjuk őket? **(3p)**
+-- NgOnInit, NgOnChanges, NgOnDestroy; Különböző metódusokat köthetünk különböző eseményekhez.
 6) Mit jelent a dependency injection? Angularban hogyan használjuk? **(2p)**
+-- A konstruktorba kell injektálni a függőséget, pl. constructor(private http: HttpClient) { }
 7) Abszolút vagy relatív elérési utat lehet használni a templaten a routerLink-nél? Miért? **(2p)**
+-- Mindkettő alkalmazható, de figyelni kell, mert relatív esetén könnyebb eltörni az útvonalat.
 8) Abszolút vagy relatív elérési utat lehet használni a kódban a Router.navigate()-nél? Miért? **(2p)**
+-- Mindkettőt, de relatív használata esetén meg kell adni a relativeTo-ba a jelenlegi útvonalat.
 9) Mik azok a guardok? Mire használjuk őket? **(2p)**
+-- 
 10) Mik azok a resolverek? Mire használjuk őket? **(2p)**
+-- 
 11) Mik azok a pipeok? Mondj legalább két példát! **(2p)**
+-- pl. {{ jsonData | json }}
 12) Mik azok az interceptorok? Mire használjuk őket? **(2p)**
+-- 
 13) Mi a különbség a Subject és a BehaviorSubject között? **(1p)**
+--
 
 ### Gyakorlati feladatok (30 pont)
 A models mappában megtaláljátok a Pet model-t és a hozzá tartozó enumot. 
